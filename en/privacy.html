@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Lyna</title>
+    <link rel="icon" type="image/png" href="../logo.png">
+    <style>
+        :root {
+            --bg: #fafaf8;
+            --text: #1a1a1a;
+            --muted: #6b6b6b;
+            --accent: #2d6a4f;
+            --card: #ffffff;
+            --border: #e8e8e4;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(250, 250, 248, 0.85);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border); z-index: 100; padding: 0 2rem;
+        }
+        .nav-inner {
+            max-width: 1000px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between; height: 60px;
+        }
+        .nav-brand {
+            display: flex; align-items: center; gap: 10px;
+            text-decoration: none; color: var(--text); font-weight: 700; font-size: 1.2rem;
+        }
+        .nav-brand img { width: 32px; height: 32px; border-radius: 8px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--text); }
+        .lang-switch { font-size: 0.85rem; color: var(--muted); border: 1px solid var(--border); padding: 4px 10px; border-radius: 8px; }
+
+        .content {
+            max-width: 700px; margin: 0 auto; padding: 120px 2rem 80px;
+        }
+        .content h1 {
+            font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem;
+        }
+        .content .date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+        .content h2 {
+            font-size: 1.15rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem;
+            color: var(--accent);
+        }
+        .content p, .content li { font-size: 0.95rem; color: #3a3a3a; margin-bottom: 1rem; }
+        .content ul { padding-left: 1.5rem; margin-bottom: 1rem; }
+        .content a { color: var(--accent); }
+
+        footer {
+            border-top: 1px solid var(--border); padding: 2rem; text-align: center;
+        }
+        .footer-links { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        .footer-links a { text-decoration: none; color: var(--muted); font-size: 0.85rem; font-weight: 500; }
+        .footer-copy { font-size: 0.8rem; color: var(--muted); }
+
+        @media (max-width: 640px) {
+            .content h1 { font-size: 1.5rem; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand"><img src="../logo.png" alt="Lyna"> Lyna</a>
+            <ul class="nav-links">
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="../privacy.html" class="lang-switch">FR</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="date">Last updated: April 6, 2025</p>
+
+        <p>Lyna ("we", "our", "the application") is committed to protecting the privacy of its users. This privacy policy explains how we collect, use, and protect your personal information.</p>
+
+        <h2>1. Data Collected</h2>
+        <p>We may collect the following types of data:</p>
+        <ul>
+            <li><strong>Account information:</strong> email address, name, date of birth, gender.</li>
+            <li><strong>Health data:</strong> weight, height, nutritional goals, scanned meals, physical activity data via Apple Health (HealthKit).</li>
+            <li><strong>Photos:</strong> meal images sent for nutritional analysis via our AI service.</li>
+            <li><strong>Usage data:</strong> interactions with the application, preferences, settings.</li>
+        </ul>
+
+        <h2>2. Use of Data</h2>
+        <p>Your data is used to:</p>
+        <ul>
+            <li>Provide application features (nutritional tracking, meal analysis, personalized recommendations).</li>
+            <li>Improve our services and user experience.</li>
+            <li>Send relevant notifications (with your consent).</li>
+        </ul>
+
+        <h2>3. HealthKit Data</h2>
+        <p>Lyna uses HealthKit to read and write health data (steps, calories burned, exercises). This data:</p>
+        <ul>
+            <li>Is <strong>never sold</strong> to third parties.</li>
+            <li>Is <strong>never used for advertising</strong> purposes.</li>
+            <li>Is <strong>not shared</strong> with non-essential third-party services.</li>
+            <li>Is stored securely and used solely to provide application features.</li>
+        </ul>
+
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell your personal data. We may share data with:</p>
+        <ul>
+            <li><strong>Hosting services:</strong> Supabase for secure data storage.</li>
+            <li><strong>AI services:</strong> OpenAI for nutritional analysis of meal photos (images are processed then deleted).</li>
+        </ul>
+
+        <h2>5. Security</h2>
+        <p>We implement appropriate security measures to protect your personal information, including encryption of data in transit and at rest, as well as secure authentication.</p>
+
+        <h2>6. Data Retention</h2>
+        <p>Your data is retained as long as your account is active. You can request deletion of your data at any time by contacting us.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>In accordance with GDPR and applicable laws, you have the following rights:</p>
+        <ul>
+            <li>Right to access your personal data.</li>
+            <li>Right to rectify inaccurate data.</li>
+            <li>Right to erasure (right to be forgotten).</li>
+            <li>Right to data portability.</li>
+            <li>Right to object to the processing of your data.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a>.</p>
+
+        <h2>8. Changes</h2>
+        <p>We reserve the right to modify this privacy policy. Any changes will be posted on this page with an updated date.</p>
+
+        <h2>9. Contact</h2>
+        <p>For any questions regarding this policy, contact us:</p>
+        <p><strong>Email:</strong> <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy-choices.html">Privacy Choices</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="support.html">Support</a>
+            <a href="mailto:mehdi.aberkane.pro@gmail.com">Contact</a>
+        </div>
+        <p class="footer-copy">&copy; 2025 OKLM PROCESS LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

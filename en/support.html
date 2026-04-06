@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choix de Confidentialite - Lyna</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <title>Support - Lyna</title>
+    <link rel="icon" type="image/png" href="../logo.png">
     <style>
         :root {
             --bg: #fafaf8;
@@ -46,7 +46,7 @@
         .content h1 {
             font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem;
         }
-        .content .date { color: var(--muted); font-size: 0.9rem; margin-bottom: 2.5rem; }
+        .content .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 2.5rem; }
         .content h2 {
             font-size: 1.15rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem;
             color: var(--accent);
@@ -55,20 +55,43 @@
         .content ul { padding-left: 1.5rem; margin-bottom: 1rem; }
         .content a { color: var(--accent); }
 
-        .choice-card {
+        .contact-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            margin: 2.5rem 0;
+        }
+        .contact-box h3 {
+            font-size: 1.1rem; font-weight: 700; margin-bottom: 0.75rem;
+        }
+        .contact-box p { color: var(--muted); margin-bottom: 1.25rem; }
+        .contact-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 106, 79, 0.25);
+        }
+
+        .faq-item {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 1.5rem;
             margin-bottom: 1rem;
         }
-        .choice-card h3 {
-            font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem;
-        }
-        .choice-card p { margin-bottom: 0.5rem; }
-        .choice-card .how {
-            font-size: 0.85rem; color: var(--accent); font-weight: 600;
-        }
+        .faq-item h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .faq-item p { margin-bottom: 0; font-size: 0.9rem; }
 
         footer {
             border-top: 1px solid var(--border); padding: 2rem; text-align: center;
@@ -86,64 +109,65 @@
 <body>
     <nav>
         <div class="nav-inner">
-            <a href="index.html" class="nav-brand"><img src="logo.png" alt="Lyna"> Lyna</a>
+            <a href="index.html" class="nav-brand"><img src="../logo.png" alt="Lyna"> Lyna</a>
             <ul class="nav-links">
                 <li><a href="support.html">Support</a></li>
-                <li><a href="privacy.html">Confidentialite</a></li>
-                <li><a href="en/privacy-choices.html" class="lang-switch">EN</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+                <li><a href="../support.html" class="lang-switch">FR</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="content">
-        <h1>Choix de Confidentialite</h1>
-        <p class="date">Derniere mise a jour : 6 avril 2025</p>
+        <h1>Support</h1>
+        <p class="subtitle">Need help? We're here for you.</p>
 
-        <p>Chez Lyna, vous gardez le controle sur vos donnees. Voici les choix dont vous disposez concernant la collecte et l'utilisation de vos informations.</p>
-
-        <div class="choice-card">
-            <h3>Donnees HealthKit</h3>
-            <p>Vous pouvez autoriser ou revoquer l'acces de Lyna a vos donnees de sante Apple Health a tout moment.</p>
-            <p class="how">Comment faire : Reglages iPhone &gt; Sante &gt; Acces aux donnees &gt; Lyna</p>
+        <div class="contact-box">
+            <h3>Contact Us</h3>
+            <p>Our team typically responds within 24 hours.</p>
+            <a href="mailto:mehdi.aberkane.pro@gmail.com" class="contact-btn">Send an email</a>
         </div>
 
-        <div class="choice-card">
-            <h3>Notifications</h3>
-            <p>Vous pouvez activer ou desactiver les notifications push de Lyna.</p>
-            <p class="how">Comment faire : Reglages iPhone &gt; Notifications &gt; Lyna</p>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do I scan a meal?</h3>
+            <p>Open the app, tap the scan button and take a photo of your meal. The AI will automatically analyze the ingredients and nutritional values.</p>
         </div>
 
-        <div class="choice-card">
-            <h3>Acces a la camera</h3>
-            <p>L'acces a la camera est necessaire pour scanner vos repas. Vous pouvez le revoquer a tout moment.</p>
-            <p class="how">Comment faire : Reglages iPhone &gt; Lyna &gt; Camera</p>
+        <div class="faq-item">
+            <h3>How do I connect Apple Health?</h3>
+            <p>On first use, Lyna will ask for permission to access your health data. You can change these permissions in Settings &gt; Health &gt; Data Access &gt; Lyna.</p>
         </div>
 
-        <div class="choice-card">
-            <h3>Suppression de compte</h3>
-            <p>Vous pouvez demander la suppression complete de votre compte et de toutes vos donnees associees.</p>
-            <p class="how">Comment faire : Contactez-nous a <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a></p>
+        <div class="faq-item">
+            <h3>How do I delete my account?</h3>
+            <p>Send an email to <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a> with your deletion request. We will process your request within 48 hours.</p>
         </div>
 
-        <div class="choice-card">
-            <h3>Acces et portabilite</h3>
-            <p>Vous avez le droit de demander une copie de toutes les donnees personnelles que nous detenons a votre sujet.</p>
-            <p class="how">Comment faire : Contactez-nous a <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a></p>
+        <div class="faq-item">
+            <h3>Is the app free?</h3>
+            <p>Lyna offers a free version with basic features. A premium subscription is available to access all advanced features.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I cancel my subscription?</h3>
+            <p>You can manage your subscription in iPhone Settings &gt; your name &gt; Subscriptions &gt; Lyna.</p>
         </div>
 
         <h2>Contact</h2>
-        <p>Pour toute question concernant vos choix de confidentialite, contactez-nous a <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a>.</p>
+        <p><strong>Email:</strong> <a href="mailto:mehdi.aberkane.pro@gmail.com">mehdi.aberkane.pro@gmail.com</a></p>
     </div>
 
     <footer>
         <div class="footer-links">
-            <a href="privacy.html">Politique de confidentialite</a>
-            <a href="privacy-choices.html">Choix de confidentialite</a>
-            <a href="terms.html">Conditions d'utilisation</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="privacy-choices.html">Privacy Choices</a>
+            <a href="terms.html">Terms of Use</a>
             <a href="support.html">Support</a>
             <a href="mailto:mehdi.aberkane.pro@gmail.com">Contact</a>
         </div>
-        <p class="footer-copy">&copy; 2025 OKLM PROCESS LLC. Tous droits reserves.</p>
+        <p class="footer-copy">&copy; 2025 OKLM PROCESS LLC. All rights reserved.</p>
     </footer>
 </body>
 </html>
